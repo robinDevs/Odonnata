@@ -1,0 +1,14 @@
+{
+  "name": "odonnata",
+  "version": "1.0.0",
+  "description": "God mode supervisor to manage all apps and more...",
+  "main": "odonnata.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Robin De Ruyck",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^2.0.5"
+  }
+}
