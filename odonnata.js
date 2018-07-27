@@ -1,9 +1,8 @@
 
-const config    = require('./config/appConfig.json');
-const helper 	  = require('./config/helpers.js');
+const config 	= require('./config/AppConfig.json');
 const electron 	= require('electron');
-const path 		  = require('path');
-const url 		  = require('url');
+const path 		= require('path');
+const url 		= require('url');
 
 const {app, BrowserWindow, Menu} = electron;
   
@@ -17,7 +16,7 @@ const {app, BrowserWindow, Menu} = electron;
   
     // et charge le index.html de l'application.
     win.loadFile('odonnata.html');
-    console.log(helper.lang('edit'));
+  
     // Ouvre les DevTools.
     // win.webContents.openDevTools()
   
