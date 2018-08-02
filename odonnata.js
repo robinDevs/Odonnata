@@ -16,7 +16,7 @@ const {app, BrowserWindow, Menu} = electron;
     win = new BrowserWindow({width: config.arch.width, height: config.arch.height});
   
     // et charge le index.html de l'application.
-    win.loadFile('odonnata.html');
+    win.loadFile('resources/views/odonnata.html');
     console.log(helper.lang('edit'));
     // Ouvre les DevTools.
     // win.webContents.openDevTools()
