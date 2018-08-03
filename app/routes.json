@@ -1,0 +1,6 @@
+{
+	"odonnata" : {
+		"login" : "resources/views/Frontend/elements/form/form.html",
+		"subscribe" : "resources/views/Frontend/elements/subscribe.html"
+	}
+}
