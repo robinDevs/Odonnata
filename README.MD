@@ -7,6 +7,7 @@ Some known games launchers as Battle.net, Epic games, LoL, etc..
 
 Version 0.0.0
 ---------------
+- #3 - Login Form
 - #1 - Add language/translation system, helper system 
 - Project birth
 
