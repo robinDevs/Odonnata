@@ -2,8 +2,13 @@
 const config    = require('./config/appConfig.json');
 const helper 	  = require('./config/helpers.js');
 const electron 	= require('electron');
+const AuthController = require('./app/Controller/AuthController.js');
 const path 		  = require('path');
 const url 		  = require('url');
+// const low = require('lowdb')
+// // const FileSync = require('lowdb/adapters/FileSync')
+// // const adapter = new FileSync('db.json')
+// // const db = low(adapter)
 
 const {app, BrowserWindow, Menu} = electron;
   
@@ -16,8 +21,9 @@ const {app, BrowserWindow, Menu} = electron;
     win = new BrowserWindow({width: config.arch.width, height: config.arch.height});
   
     // et charge le index.html de l'application.
-    win.loadFile('odonnata.html');
+    win.loadFile('resources/views/odonnata.html');
     console.log(helper.lang('edit'));
+    console.log(AuthController.isAutorized());
     // Ouvre les DevTools.
     // win.webContents.openDevTools()
   
